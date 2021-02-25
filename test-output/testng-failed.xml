@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="hrm.testscripts.TC002">
+        <methods>
+          <include name="browserSetup"/>
+          <include name="verifyHRMLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- hrm.testscripts.TC002 -->
+      <class name="hrm.testscripts.TC001">
+        <methods>
+          <include name="verifyHRMLogin"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- hrm.testscripts.TC001 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
