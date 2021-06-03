@@ -8,7 +8,7 @@ public class Browser {
 	private static WebDriver driver;
 	
 	public static WebDriver openBrowser() {
-		System.setProperty("webdriver.chrome.driver","C:\\MY DOC\\SOFTWARE TOOLS\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		driver=new ChromeDriver();
 		return driver;
 	}
